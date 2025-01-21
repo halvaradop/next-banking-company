@@ -1,0 +1,8 @@
+# Artifacts
+node_modules
+.next
+build
+
+# Build files
+pnpm-lock.yaml
+package-lock.json
