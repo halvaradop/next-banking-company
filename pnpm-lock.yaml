@@ -18,6 +18,9 @@ importers:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
     devDependencies:
+      '@halvaradop/tailwindcss-utilities':
+        specifier: ^0.2.3
+        version: 0.2.3
       '@types/node':
         specifier: ^20
         version: 20.17.14
@@ -45,6 +48,9 @@ packages:
 
   '@emnapi/runtime@1.3.1':
     resolution: {integrity: sha512-kEBmG8KyqtxJZv+ygbEim+KCGtIq1fC22Ms3S4ziXmYKm8uyoLX0MHONVKwp+9opg390VaKRNt4a7A9NwmpNhw==}
+
+  '@halvaradop/tailwindcss-utilities@0.2.3':
+    resolution: {integrity: sha512-z8e3hdNLpgV7Pv46VL0zboLAhxC63xUt/8iYqiYO3TJxBlcWQZkAuyN7LZVH1x/FfqVCxo0YgMLYZ3HlRQ0IHw==}
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -744,6 +750,8 @@ snapshots:
     dependencies:
       tslib: 2.8.1
     optional: true
+
+  '@halvaradop/tailwindcss-utilities@0.2.3': {}
 
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:
