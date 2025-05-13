@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+
+    body {
+        @apply scroll:w-2 track:my-2 thumb:rounded thumb:bg-grey-600;
+    }
+}
