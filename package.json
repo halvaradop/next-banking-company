@@ -11,12 +11,14 @@
     "format:check": "prettier --check ."
   },
   "dependencies": {
+    "@halvaradop/ui-button": "0.3.2-beta.1",
     "next": "15.1.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@halvaradop/tailwindcss-utilities": "^0.2.3",
+    "@halvaradop/ui-core": "^0.4.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@halvaradop/ui-button':
+        specifier: 0.3.2-beta.1
+        version: 0.3.2-beta.1
       next:
         specifier: 15.1.5
         version: 15.1.5(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -21,6 +24,9 @@ importers:
       '@halvaradop/tailwindcss-utilities':
         specifier: ^0.2.3
         version: 0.2.3
+      '@halvaradop/ui-core':
+        specifier: ^0.4.0
+        version: 0.4.0
       '@types/node':
         specifier: ^20
         version: 20.17.14
@@ -54,6 +60,15 @@ packages:
 
   '@halvaradop/tailwindcss-utilities@0.2.3':
     resolution: {integrity: sha512-z8e3hdNLpgV7Pv46VL0zboLAhxC63xUt/8iYqiYO3TJxBlcWQZkAuyN7LZVH1x/FfqVCxo0YgMLYZ3HlRQ0IHw==}
+
+  '@halvaradop/ui-button@0.3.2-beta.1':
+    resolution: {integrity: sha512-4wvJWBrjzsEf5DaVR7Lq75u+xZhEaLf0HZLT2U0iBO03KdhkHXFcqFjLwh6pbcvBljDzujZvQgw3Nrwj1z44kg==}
+
+  '@halvaradop/ui-core@0.2.1-beta.1':
+    resolution: {integrity: sha512-3AanE6acM7yZakq+UcXILfZh3kPY4IHl07Q8YrICHosNh42CSFnvCYV6jgCQkYVBNw+dV/T6jGJEIRxdzI3yNA==}
+
+  '@halvaradop/ui-core@0.4.0':
+    resolution: {integrity: sha512-Y33XOAP9z7rGzwZPOP5HSJr9OVxpF2OQOwIMxZxkhMARhP/vaJ51q2PyKKztsSzVEctYIuOwcgzQvpJrrV6nXg==}
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -321,8 +336,15 @@ packages:
     resolution: {integrity: sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw==}
     engines: {node: '>= 8.10.0'}
 
+  class-variance-authority@0.7.0:
+    resolution: {integrity: sha512-jFI8IQw4hczaL4ALINxqLEXQbWcNjoSkloa4IaufXCJr6QawJyw7tuRysRsrE8w2p/4gGaxKIt/hX3qz/IbD1A==}
+
   client-only@0.0.1:
     resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
+
+  clsx@2.0.0:
+    resolution: {integrity: sha512-rQ1+kcj+ttHG0MKVGBUXwayCCF1oh39BF5COIpRzuCEv8Mwjv0XucrI2ExNTOn9IlLifGClWQcU9BrZORvtw6Q==}
+    engines: {node: '>=6'}
 
   color-convert@2.0.1:
     resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
@@ -699,6 +721,9 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
+  tailwind-merge@2.6.0:
+    resolution: {integrity: sha512-P+Vu1qXfzediirmHOC3xKGAYeZtPcV9g76X+xg2FD4tYgR71ewMA35Y3sCz3zhiN/dwefRpJX0yBcgwi1fXNQA==}
+
   tailwindcss@3.4.17:
     resolution: {integrity: sha512-w33E2aCvSDP0tW9RZuNXadXlkHXqFzSkQew/aIa2i/Sj8fThxwovwlXHSPXTbAHwEIhBFXAedUhP2tueAKP8Og==}
     engines: {node: '>=14.0.0'}
@@ -760,6 +785,19 @@ snapshots:
     optional: true
 
   '@halvaradop/tailwindcss-utilities@0.2.3': {}
+
+  '@halvaradop/ui-button@0.3.2-beta.1':
+    dependencies:
+      '@halvaradop/ui-core': 0.2.1-beta.1
+      class-variance-authority: 0.7.0
+
+  '@halvaradop/ui-core@0.2.1-beta.1':
+    dependencies:
+      tailwind-merge: 2.6.0
+
+  '@halvaradop/ui-core@0.4.0':
+    dependencies:
+      tailwind-merge: 2.6.0
 
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:
@@ -972,7 +1010,13 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
+  class-variance-authority@0.7.0:
+    dependencies:
+      clsx: 2.0.0
+
   client-only@0.0.1: {}
+
+  clsx@2.0.0: {}
 
   color-convert@2.0.1:
     dependencies:
@@ -1331,6 +1375,8 @@ snapshots:
       ts-interface-checker: 0.1.13
 
   supports-preserve-symlinks-flag@1.0.0: {}
+
+  tailwind-merge@2.6.0: {}
 
   tailwindcss@3.4.17:
     dependencies:
