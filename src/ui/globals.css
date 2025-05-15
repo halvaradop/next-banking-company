@@ -1,3 +1,31 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@reference "../../node_modules/@halvaradop/tailwindcss-utilities/dist/plugin.css";
+
+@theme {
+  --color-white: #ffffff;
+  --color-white-100: "#FCFCFD";
+  --color-white-200: "#F7F7F8";
+  --color-white-300: "#F1F1F3";
+  --color-white-400: "#E4E4E7";
+
+  --color-green: "#FEFFFA";
+  --color-green-100: "#FBFFF0";
+  --color-green-200: "#F8FFE5";
+  --color-green-300: "#F2FFCC";
+  --color-green-400: "#E5FF99";
+  --color-green-500: "#D8FF66";
+  --color-green-600: "#D1FF4C";
+  --color-green-700: "#CAFF33";
+
+  --color-grey-100: "#BFBFBF";
+  --color-grey-200: "#B3B3B3";
+  --color-grey-300: "#98989A";
+  --color-grey-400: "#656567";
+  --color-grey-500: "#59595A";
+  --color-grey-600: "#4C4C4D";
+  --color-grey-700: "#333333";
+  --color-grey-800: "#262626";
+  --color-grey-900: "#1C1C1C";
+  --color-grey-1000: "#191919";
+  --color-grey-1100: "#1E1E1E";
+}
